@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="/js/app.js"></script>
+    <link rel="stylesheet" href="/tailwind/output.css" />
+  </head>
+  <body class="bg-black h-screen">
+    <nav
+      class="p-5 bg-teal-700 top-0 fixed w-full shadow md:flex md:items-center md:justify-between"
+    >
+      <div class="flex justify-between items-center">
+        <span class="text-2xl cursor-pointer text-white">
+          <img class="h-10 inline ml-5" id="logo" src="/img/img/logo.png" />
+          Acme Rockets
+        </span>
+
+        <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+          <img
+            id="menu"
+            src="/img/img/menu.png"
+            class="text-white w-8 h-8"
+            onclick="changeVisibleMenu(this)"
+          />
+        </span>
+      </div>
+
+      <ul
+        id="nav"
+        class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-teal-700 w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500"
+      >
+        <li class="mx-4 my-6 md:my-0">
+          <a href="#" class="text-xl text-white">Our Rockets</a>
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+          <a href="#" class="text-xl text-white">Testimonials</a>
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+          <a href="#" class="text-xl text-white">Contact Us</a>
+        </li>
+      </ul>
+    </nav>
+    <section id="section-one" class="bg-black mt-20">
+      <!-- Big Rocket Section -->
+
+      <div class="flex items-center justify-center">
+        <img
+          src="/img/img/astronaut.png"
+          alt="astronaut"
+          class="w-60 h-60 mt-10 lg:w-80 lg:h-80"
+        />
+      </div>
+      <!--  End Big Rocket Section -->
+      <!-- Big Text Section -->
+
+      <div class="flex items-center justify-center text-center tracking-wider">
+        <div class="p-4 m-4">
+          <h1 class="font-bold text-white text-3xl leading-10">We Boldy Go</h1>
+          <h1 class="font-bold text-cyan-200 text-3xl leading-10">
+            Where No Rocket
+          </h1>
+          <h1 class="font-bold text-white text-3xl leading-10">
+            Has Gone Before...
+          </h1>
+        </div>
+      </div>
+      <div class="p-1 m-2">
+        <p class="text-gray-500 text-center text-lg">
+          We are building rockets for the <br />next century today,from the
+          <br />moon to Mars, Jupiter <br />
+          and beyond...
+        </p>
+        <p class="text-gray-500 text-center mt-4 text-lg">Thank Acme Rockets</p>
+      </div>
+
+      <!-- End Big Text Section-->
+      <div class="flex justify-center items-center mt-12">
+        <hr class="w-64 lg:w-96" />
+      </div>
+    </section>
+    <!-- Section Two -->
+    <section id="section-two" class="bg-black mt-14">
+      <div class="flex justify-center items-center">
+        <h1 class="text-white font-bold text-3xl lg:text-4xl">Our rockets</h1>
+      </div>
+
+      <!--Card 1-->
+      <div class="lg:flex lg:items-center lg:justify-center lg:gap-10">
+        <div class="flex justify-center items-center">
+          <div class="text-center p-10 m-10">
+            <img
+              src="/img/img/rocket.webp"
+              class="w-48 h-48 rounded-2xl md:w-60 md:h-60 lg:w-72 lg:h-72"
+            />
+            <p class="text-white py-2 tracking-wide text-lg">Infinity</p>
+            <p class="text-white">$</p>
+          </div>
+        </div>
+        <!--Card 2-->
+
+        <div class="flex justify-center items-center">
+          <div class="text-center p-10 m-10">
+            <img
+              src="/img/img/rocket_three.jpg"
+              class="w-48 h-48 rounded-2xl md:w-60 md:h-60 lg:w-72 lg:h-72"
+            />
+            <p class="text-white py-2 tracking-wide text-lg">Explorer</p>
+            <p class="text-white">$$</p>
+          </div>
+        </div>
+        <!--Card 3-->
+
+        <div class="flex justify-center items-center">
+          <div class="text-center p-10 m-10">
+            <img
+              src="/img/img/rocket _two.jpg"
+              class="w-48 h-48 rounded-2xl md:w-60 md:h-60 lg:w-72 lg:h-72"
+            />
+            <p class="text-white py-2 tracking-wide text-lg">Adventurer</p>
+            <p class="text-white">$$$</p>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center items-center mt-12">
+        <hr class="w-64 lg:w-96" />
+      </div>
+    </section>
+    <!--Section Three-->
+    <section id="section-three" class="bg-black py-8">
+      <div class="flex justify-center items-center">
+        <h1 class="text-white font-bold text-3xl mt-14 lg:text-4xl">
+          Testimonials
+        </h1>
+      </div>
+      <!---->
+      <div class="lg:flex lg:justify-center lg:items-center">
+        <div class="bg-teal-700 p-6 m-10 mt-10 rounded-3xl">
+          <p class="text-left text-white text-lg">
+            Acme has always been there for me.Their Explorer rocekt arrived in a
+            wooden crate as expected. Life-long customer! A++ shopping
+            experience.
+          </p>
+          <span class="text-sm lg:text-sm text-gray-900">- Wile E. Coyote</span>
+        </div>
+        <div class="bg-teal-700 p-6 m-10 mt-10 rounded-3xl">
+          <p class="text-left text-white text-lg">
+            The Acme Adventurer Rocket has thwarted my illudium Q-36 Explosivve
+            Space Modulator on several occassions.This makes me very, very
+            angry! Nevertheless, K-9 and I have awarded Acme the Martian
+            contract for space exploration rockets based on Acme's quality and
+            strudy designs.
+          </p>
+          <span class="text-sm lg:text-sm text-gray-900"
+            >- Marvin The Martian & K-9</span
+          >
+        </div>
+        <div class="bg-teal-700 p-6 m-10 mt-10 rounded-3xl">
+          <p class="text-left text-white text-lg">
+            I knew I not only wanted -- I needed -- Acme's infinity Rocket for
+            my mission in space. Acme delivered in one day! Nothing says "Take
+            me to you leader" like Acme's Infinity Rocket!
+          </p>
+          <span class="text-sm lg:text-sm text-gray-900">- Buzz Lightyear</span>
+        </div>
+      </div>
+      <!---->
+    </section>
+    <div class="flex justify-center items-center mt-12">
+      <hr class="w-64 lg:w-96" />
+    </div>
+    <!--Section Four-->
+    <section id="section-four" class="bg-black">
+      <div class="flex justify-center items-center">
+        <h1 class="text-white font-bold text-3xl mt-14 lg:text-4xl">
+          Contact Us
+        </h1>
+      </div>
+      <div class="flex items-center justify-center">
+        <form class="mt-10 rounded-xl">
+          <label for="email" class="text-white p-5">Subject</label><br />
+          <input class="p-2 m-4 border-none w-80" placeholder="Your Subject" />
+        </form>
+      </div>
+      <div class="flex items-center justify-center">
+        <form class="mt-10 rounded-lg">
+          <label for="email" class="text-white p-5">Message</label><br />
+          <input class="p-2 m-4 border-none w-80" placeholder="Your Message" />
+        </form>
+      </div>
+      <div class="flex items-center justify-center mt-4">
+        <button class="px-2 py-1.5 m-2 text-white bg-teal-700 rounded-lg">
+          Submit
+        </button>
+      </div>
+    </section>
+
+    <footer class="bg-teal-700 p-3 m-auto max-w-full mt-16">
+      <div class="text-white text-center">
+        <p>Acme Rocket-Powered Products,Inc</p>
+        <p>Copyright 2022</p>
+        <p>Created By Devemit</p>
+      </div>
+    </footer>
+  </body>
+</html>
