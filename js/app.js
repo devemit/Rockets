@@ -1,9 +1,3 @@
-// import "./numbers.js";
-// import { addToCart } from "./numbers.js";
-// import { totalPrice, totalQuantity } from "./numbers.js";
-// // we can change the name from totalPrice to price with 'as' totalPrice as price
-// get elements
-
 const logo = document.querySelector("#logo");
 
 // Back to top
